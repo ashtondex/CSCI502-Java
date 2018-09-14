@@ -1,0 +1,77 @@
+/************************************************************
+ *                                                          *
+ *  CSCI 502          Assignment 2           Fall 2018      *                                             
+ *                                                          *
+ *  Programmer: Ashton Dsouza (Z1828205)                    *  
+ *                                                          *
+ *  Date Due:   09/14/2018  11.59pm                         *                          
+ *                                                          *
+ *  Purpose:    To Study Classes, Objects, Methods and      *
+ *              Strings                                     *
+ *                                                          *
+ *                                                          * 
+ ***********************************************************/
+
+
+/************************************** Question 3.13 ***********************************************/
+
+
+class Employee
+{
+  private String firstName;
+  private String lastName;
+  private Double salary;
+  
+  
+  public Employee(String firstName, String lastName, Double salary) // Constructor to initialize variables
+  {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.salary = salary;
+  }
+  
+  /* Below are the set methods for the variable */
+  
+  public void setFirstName(String firstName)
+ {
+   this.firstName = firstName;
+ }
+  
+  
+  public void setLastName(String lastName)
+ {
+   this.lastName = lastName;
+ }
+  
+  
+  public void setSalary(Double salary)
+ {
+   if (salary >= 0)
+   {
+     this.salary = salary;
+   }
+ }
+  
+  /* Below are the get methods for the variables */
+  
+  public String getFirstName()
+ {
+   return firstName;
+ }
+  
+  public String getLastName()
+ {
+   return lastName;
+ }
+  
+  public Double getSalary()
+ {
+   return salary;
+ }
+  
+  public Double getYearlySalary()
+  {
+    return ( 12 * getSalary() );
+  }
+  
+}
