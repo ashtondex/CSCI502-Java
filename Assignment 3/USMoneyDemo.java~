@@ -1,0 +1,10 @@
+class USMoneyDemo
+{
+  public static void main(String[] args)
+  {
+    USMoney obj1 = new USMoney(4,4);
+    USMoney obj2 = new USMoney(4,4);
+    obj1.plus(obj2);
+    //obj3.print();
+  }
+}

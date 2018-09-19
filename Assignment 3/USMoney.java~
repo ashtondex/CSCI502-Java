@@ -1,0 +1,48 @@
+class USMoney
+{
+  private int dollars;
+  private int cents;
+  
+  public USMoney()
+  {
+    this.dollars = 0;
+    this.cents = 0;
+  }
+  
+  public USMoney(int dollars,int cents)
+  {
+    this.dollars = dollars;
+    this.cents = cents;
+  }
+  
+  public void setDollars()
+  {
+    this.dollars=dollars;
+  }
+  
+  public void setCents()
+  {
+    this.cents = cents;
+  }
+  
+  public int getDollars()
+  {
+    return this.dollars;
+  }
+  
+  public int getCents()
+  {
+    return this.cents;
+  }
+  
+  public void plus(USMoney obj)
+  {
+    int x = this.dollars + obj.dollars;
+    int y = this.cents + obj.cents;
+    
+    System.out.print(x+"Hello"+ y);
+  }
+  
+ 
+  
+}
