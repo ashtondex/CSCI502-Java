@@ -1,0 +1,10 @@
+class DateDemo
+{
+
+  public static void main(String[] args)
+  {
+    Date d1 = new Date(11,30,1995); // Create an instance of the class Date
+    d1.displayDate(); // Calling the print Method from class Date
+  }
+
+}
